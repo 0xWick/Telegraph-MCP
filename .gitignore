@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+*.js.map
+*.d.ts.map
+.eliza/
+.elizadb/
+*.log
+.venv/
+__pycache__/
+*.pyc

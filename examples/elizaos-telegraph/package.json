@@ -1,0 +1,24 @@
+{
+  "name": "@telegraph/example-elizaos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ElizaOS agent connected to Telegraph MCP — weather, inference, deepfake detection, signal monitoring",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/test-mcp.ts",
+    "dev": "tsx watch src/test-mcp.ts",
+    "character": "tsx src/character.ts"
+  },
+  "dependencies": {
+    "@elizaos/core": "^1.7.2",
+    "@elizaos/plugin-bootstrap": "^1.7.2",
+    "@elizaos/plugin-mcp": "1.7.1",
+    "@elizaos/plugin-sql": "^1.7.2",
+    "dotenv": "^16.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
