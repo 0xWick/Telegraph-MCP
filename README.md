@@ -118,7 +118,7 @@ Edit `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) o
   "mcpServers": {
     "telegraph": {
       "command": "node",
-      "args": ["/home/wick/Telegraph-MCP/dist/index.js"],
+      "args": ["/path/to/Telegraph-MCP/dist/index.js"],
       "env": {
         "TELEGRAPH_NODE_URL": "http://13.237.89.59:7044",
         "TELEGRAPH_ENGINE_URL": "http://13.237.89.59:8080",
@@ -141,7 +141,7 @@ Add to Cursor Settings → MCP → Add new MCP server:
   "mcpServers": {
     "telegraph": {
       "command": "node",
-      "args": ["/home/wick/Telegraph-MCP/dist/index.js"],
+      "args": ["/path/to/Telegraph-MCP/dist/index.js"],
       "env": {
         "TELEGRAPH_NODE_URL": "http://13.237.89.59:7044",
         "TELEGRAPH_ENGINE_URL": "http://13.237.89.59:8080",
@@ -162,7 +162,7 @@ In your Eliza character file or MCP plugin config:
   "mcp": {
     "telegraph": {
       "command": "node",
-      "args": ["/home/wick/Telegraph-MCP/dist/index.js"],
+      "args": ["/path/to/Telegraph-MCP/dist/index.js"],
       "env": {
         "TELEGRAPH_NODE_URL": "http://13.237.89.59:7044",
         "TELEGRAPH_ENGINE_URL": "http://13.237.89.59:8080",
@@ -196,7 +196,7 @@ from langchain_mcp_adapters.client import MultiServerMCPClient
 client = MultiServerMCPClient({
     "telegraph": {
         "command": "node",
-        "args": ["/home/wick/Telegraph-MCP/dist/index.js"],
+        "args": ["/path/to/Telegraph-MCP/dist/index.js"],
         "env": {
             "TELEGRAPH_NODE_URL": "http://13.237.89.59:7044",
             "TELEGRAPH_ENGINE_URL": "http://13.237.89.59:8080",
@@ -223,7 +223,7 @@ import { MultiServerMCPClient } from "@langchain/mcp-adapters";
 const client = new MultiServerMCPClient({
   telegraph: {
     command: "node",
-    args: ["/home/wick/Telegraph-MCP/dist/index.js"],
+    args: ["/path/to/Telegraph-MCP/dist/index.js"],
     env: {
       TELEGRAPH_NODE_URL: "http://13.237.89.59:7044",
       TELEGRAPH_ENGINE_URL: "http://13.237.89.59:8080",
@@ -247,7 +247,7 @@ OpenClaw natively supports MCP via configuration. Add to `openclaw.config.json`:
     "telegraph": {
       "type": "stdio",
       "command": "node",
-      "args": ["/home/wick/Telegraph-MCP/dist/index.js"],
+      "args": ["/path/to/Telegraph-MCP/dist/index.js"],
       "env": {
         "TELEGRAPH_NODE_URL": "http://13.237.89.59:7044",
         "TELEGRAPH_ENGINE_URL": "http://13.237.89.59:8080",
@@ -269,7 +269,7 @@ extensions:
     type: mcp
     command: node
     args:
-      - /home/wick/Telegraph-MCP/dist/index.js
+      - /path/to/Telegraph-MCP/dist/index.js
     env:
       TELEGRAPH_NODE_URL: http://13.237.89.59:7044
       TELEGRAPH_ENGINE_URL: http://13.237.89.59:8080
@@ -289,7 +289,7 @@ In Continue's `config.json`:
         "transport": {
           "type": "stdio",
           "command": "node",
-          "args": ["/home/wick/Telegraph-MCP/dist/index.js"],
+          "args": ["/path/to/Telegraph-MCP/dist/index.js"],
           "env": {
             "TELEGRAPH_NODE_URL": "http://13.237.89.59:7044",
             "TELEGRAPH_ENGINE_URL": "http://13.237.89.59:8080",
